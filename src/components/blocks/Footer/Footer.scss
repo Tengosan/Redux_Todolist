@@ -1,0 +1,11 @@
+@import '~CommonColors';
+
+.footer {
+  align-items: center;
+  background-color: $footer_background-color;
+  border: 1px solid;
+  border-color: $footer_border-color;
+  display: flex;
+  height: 50px;
+  justify-content: flex-start;
+}

@@ -1,0 +1,15 @@
+@import '~CommonColors';
+
+.content {
+  background-color: $content_background-color;
+  display: flex;
+  height: calc(100vh - 104px);
+  justify-content: center;
+
+  & > div {
+    display: flex;
+    margin-top: 10px;
+    min-height: calc(100vh - 114px);
+    width: 980px;
+  }
+}

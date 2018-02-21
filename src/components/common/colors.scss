@@ -1,0 +1,54 @@
+$darkblue:              #1b5fa7;
+$lightblue:             #31b0d5;
+$verylightblue:         #b3e5fc;
+$green:                 #8bc34a;
+$red:                   #f44336;
+$white:                 #fff;
+$grey:                  #333;
+
+$font-family_base:                                      Verdana, Tahoma, sans-serif;
+$font-family_especial:                                  Roboto, sans-serif;
+
+$body_background-color:                                 $white;
+$body_font-family:                                      $font-family_base;
+$server-is-not-responding_font-family:                  $font-family_base;
+
+$header_background-color:                               #fafafa;
+$header_border-color:                                   $lightblue;
+$header__title_color:                                   $darkblue;
+$header__title_font-family:                             $font-family_especial;
+
+$footer_background-color:                               #f2f2f2;
+$footer_border-color:                                   $lightblue;
+
+$button_background-color:                               transparent;
+$button_border_color:                                   $lightblue;
+$button_color:                                          $lightblue;
+$button_hover_background-color:                         transparent;
+$button_hover_border-color:                             $darkblue;
+$button_hover_color:                                    $darkblue;
+
+$filter-list_background-color:                          $white;
+$filter-list_border-color:                              $lightblue;
+$filter-list__item_color:                               $lightblue;
+$filter-list__item_font-family:                         $font-family_base;
+$filter-list__item_hover_color:                         $darkblue;
+
+$content_background-color:                              $white;
+
+$task-edit_background-color:                            $white;
+$task-edit-header_border-bottom-color:                  $lightblue;
+$task-edit-header__caption_font-family:                 $font-family_base;
+
+
+$task-list_background-color:                            $white;
+$task-divider_border-right-color:                       $lightblue;
+$task-item_background-color:                            $verylightblue;
+$task-item_color:                                       $grey;
+$task-item_border-bottom_color:                         $lightblue;
+$task-item-container__caption_font-family:              $font-family_base;
+
+$task-item-container__status_done_background-color:     $green;
+$task-item-container__status_done_color:                $white;
+$task-item-container__status_overdue_background-color:  $red;
+$task-item-container__status_overdue_color:             $white;

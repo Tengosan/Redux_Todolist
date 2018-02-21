@@ -1,0 +1,40 @@
+@import '~CommonColors';
+
+.menu-button {
+  background-color: $button_background-color;
+  border: 1px solid $button_border_color;
+  border-radius: 4px;
+  color: $button_color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  height: 30px;
+  outline-style: none;
+  position: relative;
+  text-align: center;
+  width: 32px;
+
+  &:hover {
+    background-color: $button_hover_background-color;
+    border: 1px solid $button_hover_border-color;
+    color: $button_hover_color;
+    font-size: 17px;
+    padding: 1px 3px;
+    transition: font-size .1s ease, top .1s ease;
+
+    &::before {
+      top: 5px;
+    }
+  }
+
+  &::before {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 6px;
+  }
+}

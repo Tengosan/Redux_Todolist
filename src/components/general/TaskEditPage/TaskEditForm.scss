@@ -1,0 +1,83 @@
+@import '~CommonColors';
+@import '~FontAwesome';
+@import './mixins';
+
+.task-edit-form {
+  background-color: $task-edit_background-color;
+  margin-left: 10px;
+  overflow-y: auto;
+  padding-right: 10px;
+  width: 800px;
+}
+
+.task-edit-header {
+  align-items: center;
+  border-bottom: 2px solid;
+  border-bottom-color: $task-edit-header_border-bottom-color;
+  display: flex;
+  height: 50px;
+  padding: 10px 0 10px 10px;
+}
+
+.task-edit-header__caption {
+  cursor: default;
+  font-family: $task-edit-header__caption_font-family;
+  font-size: 21px;
+}
+
+.task-edit-header__menu {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  width: 67px;
+}
+
+.task-edit-header-menu__menu-button-save {
+
+  &::before {
+    content: $fa-floppy-o;
+  }
+}
+
+.task-edit-header-menu__menu-button-delete {
+
+  &::before {
+    content: $fa-trash-o;
+  }
+}
+
+.task-edit-content {
+  padding: 10px 0 10px 10px;
+}
+
+.task-edit-content__name {
+  margin-bottom: 10px;
+
+  & div {
+    width: 100%;
+
+    & input {
+      box-sizing: border-box;
+      height: 26px;
+      padding-left: 5px;
+      width: 100%;
+    }
+  }
+}
+
+.task-edit-content__description {
+  margin-bottom: 10px;
+
+  & input {
+    @include task-edit-content-input;
+  }
+}
+
+.task-edit-content__done {
+  margin-bottom: 10px;
+
+  & [type='text'] {
+    @include task-edit-content-input('50%');
+  }
+}

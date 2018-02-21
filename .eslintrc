@@ -1,0 +1,48 @@
+{
+  extends: [
+    "airbnb",
+    "plugin:lodash/recommended",
+    "plugin:react/recommended",
+    "plugin:css-modules/recommended"
+  ],
+  parser: "babel-eslint",
+  env: {
+    "browser": true,
+    "node": true
+  },
+  settings: {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.dev.js"
+      },
+    },
+  },
+  rules: {
+    "lodash/prefer-lodash-method": [
+      2,
+      {
+        "ignoreObjects": [
+          "React.Children"
+        ]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to"
+        ]
+      }
+    ]
+  },
+  plugins: [
+    "babel",
+    "import",
+    "lodash",
+    "react",
+    "css-modules"
+  ]
+}

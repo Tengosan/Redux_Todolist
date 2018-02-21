@@ -1,0 +1,35 @@
+@import '~CommonColors';
+@import './mixins';
+
+.task-edit-content__due-wrapper {
+
+  &:hover {
+    .task-edit-content__due-datetime-picker {
+      display: block;
+    }
+  }
+}
+
+.task-edit-content__due-datetime-picker {
+  display: none;
+}
+
+.task-edit-content__due {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+
+  & [type='checkbox'] {
+    width: 25px;
+  }
+
+  & [type='text'] {
+    @include task-edit-content-input('50%');
+  }
+
+  & label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+  }
+}

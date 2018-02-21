@@ -1,0 +1,8 @@
+@import '~CommonColors';
+
+.task-list {
+  background-color: $task-list_background-color;
+  overflow-y: auto;
+  padding-right: 10px;
+  width: 100%;
+}

@@ -1,0 +1,95 @@
+@import '~CommonColors';
+
+.task-item {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid;
+  border-color: $task-item_border-bottom_color;
+  box-sizing: border-box;
+  color: $task-item_color;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  height: 60px;
+  outline: none;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  z-index: 0;
+
+  &::after {
+    background-color: $task-item_background-color;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: width .9s ease-in, opacity .9s ease-in;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:not(:hover) {
+    &::after {
+      opacity: .3;
+      transition: 0s;
+      width: 0;
+    }
+  }
+
+  &_selected {
+    background-color: $task-item_background-color;
+  }
+}
+
+.task-item__checkbox {
+  font-size: 16px;
+  height: 20px;
+  text-align: center;
+  width: 20px;
+}
+
+.task-item-container {
+  padding-left: 15px;
+  width: 100%;
+
+  & > div {
+    display: flex;
+  }
+}
+
+.task-item-container__caption {
+  font-family: $task-item-container__caption_font-family;
+  font-weight: 600;
+  max-width: 300px;
+  text-align: left;
+}
+
+.task-item-container__date {
+  font-weight: 600;
+  margin-left: auto;
+
+}
+
+.task-item-container__status {
+
+  &_done {
+    background-color: $task-item-container__status_done_background-color;
+    color: $task-item-container__status_done_color;
+    font-weight: 600;
+  }
+
+  &_overdue {
+    background-color: $task-item-container__status_overdue_background-color;
+    color: $task-item-container__status_overdue_color;
+    font-weight: 600;
+  }
+}
+
+.task-item-container__priority {
+  margin-left: auto;
+}

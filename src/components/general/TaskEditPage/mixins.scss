@@ -1,0 +1,8 @@
+@import '~CommonColors';
+
+@mixin task-edit-content-input($width: '100%') {
+  box-sizing: border-box;
+  height: 26px;
+  padding-left: 5px;
+  width: $width;
+}

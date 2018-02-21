@@ -1,0 +1,9 @@
+# Ignore built files
+dist/
+bundle.js
+*.png
+*.jpg
+*.gif
+*.css
+*.less
+*.scss
